@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
             taskTextLi.textContent = taskText
 
             const removeBtn = document.createElement('button')
-            removeBtn.textContent = "remove"
+            removeBtn.textContent = "Remove"
             removeBtn.className = "remove-btn"
 
             removeBtn.addEventListener('click', function(){
@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
             taskTextLi.appendChild(removeBtn)
             taskList.appendChild(taskTextLi)
+
+            taskInput.value = ""
         }
     }
 
